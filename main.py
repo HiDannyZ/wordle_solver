@@ -1,6 +1,5 @@
 import config
 
-target = "wrong"
 ans = {}
 yellow = {}
 wrong_letters = []
@@ -16,12 +15,8 @@ def pick_word(words):
 def filter_words(words):
     print_state()
     for word in words:
-        if no_wrong_letters(word):
-            print(f"wrong:{word}")
-        if correct_greens(word):
-            print(f"green:{word}")
-        if yellow_position(word):
-            print(f"yellow:{word}")
+        if no_wrong_letters(word) and correct_greens(word) and yellow_position(word):
+            print(f"{word}")
         else:
             continue
         return word
@@ -82,4 +77,3 @@ if __name__ == "__main__":
     match_word("toasm","+=-=+")
     words = ['aback', 'mogst', 'moist']
     a = filter_words(words)
-    print(a)
