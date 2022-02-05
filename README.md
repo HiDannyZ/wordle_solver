@@ -11,4 +11,5 @@ Code:
 - Loop until we find word or when we reach # of attempts
     - Select a random word for first word
     - Determine the letters that were accepted and not accepted
+        - New Input
     - filter possible word list and choose a new word from new list
