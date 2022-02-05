@@ -1,3 +1,4 @@
+raise
 aback
 abase
 abate
@@ -1532,7 +1533,6 @@ radar
 radii
 radio
 rainy
-raise
 rajah
 rally
 ralph
